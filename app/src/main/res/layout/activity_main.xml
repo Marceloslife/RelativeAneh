@@ -34,6 +34,34 @@
             android:text="ENTER"
             android:layout_below="@+id/et_nama"
             android:layout_centerHorizontal="true"/>
+    <CheckBox
+        android:id="@+id/cb_ya"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:text="ya"
+        android:layout_alignParentBottom="true"/>
+    <CheckBox
+        android:id="@+id/cb_tidak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tidak"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/cb_ya"/>.
+
+    <TextView
+        android:id="@+id/_sayameyatakan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="saya menyatakan data ini: "
+        android:layout_above="@+id/cb_ya"/>.
+
+    <Spinner
+        android:id="@+id/sp_kemunkinan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/arr_kemungkinan"
+        android:layout_above="@+id/cb_ya"
+        android:layout_toRightOf="@+id/_sayameyatakan"/>
 
 
 
